@@ -1,0 +1,72 @@
+<div id="wrapper">
+    <header>
+        <!-- Navbar
+      ================================================== -->
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="/"><img src="{{asset('assets')}}/img/logo.png" alt="" /></a>
+                    </div>
+                    <!-- end logo -->
+
+                    <!-- top menu -->
+                    <div class="navigation">
+                        <nav>
+                            <ul class="nav topnav">
+                                <li class="active">
+                                    <a href="/home"><i class="icon-home"></i> Home </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/portfolio"><i class="icon-cog"></i> Appartement <i class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/about"><i class="icon-info-sign"></i> A Propos de nous <i class="icon-angle-down"></i></a>
+
+                                </li>
+                                <li class="dropdown">
+                                    <a href="/components"><i class="icon-briefcase"></i> Politique <i class="icon-question-sign"></i></a>
+                                    <ul class="dropdown-menu">
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#"><i class="icon-book"></i> Blog <i class="icon-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="blog-left-sidebar.html">A venir</a></li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/contact"><i class="icon-envelope-alt"></i> Contact</a>
+                                </li>
+
+                                {% if app.user %}
+                                    <li>
+                                    <a href="/user"><img src="{{ asset('uploads/images/' ~ app.user.image) }}" style="height: 30px" >
+                                        {{ app.user.name }}  {{ app.user.surname }}</a>
+
+                                    </li>
+
+                                    <li><a href="/logout">Logout</a></li>
+                                {% else %}
+                                    <li>
+                                        <a href="/loginuser"><i class="icon-envelope-alt"></i> Login</a>
+                                    </li>
+                                {% endif %}
+
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- end menu -->
+
+                </div>
+            </div>
+        </div>
+    </header>

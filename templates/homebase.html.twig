@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{% block description %}Appartement en haut de villa de deux chambres pour 5 couchages avec terrasse  - 80 € en moyenne par nuit - Marignane - Principales caractéristiques : Internet, Climatisation, Animaux de compagnie bienvenus, Télévision, Enfants bienvenus, Parking, Chauffage ✓ Avec 2 chambres ✓ Capacité maximum 5 personne(s) ✓ Animaux de compagnie acceptés ✓ Séjour minimum de 2 nuit(s) ✓ Réservation en ligne{% endblock %}">
+        <meta name="keywords" content="{% block keywords %}Appartement en haut de villa de deux chambres pour 5 couchages avec terrasse  - 80 € en moyenne par nuit - Marignane - Principales caractéristiques : Internet, Climatisation, Animaux de compagnie bienvenus, Télévision, Enfants bienvenus, Parking, Chauffage ✓ Avec 2 chambres ✓ Capacité maximum 5 personne(s) ✓ Animaux de compagnie acceptés ✓ Séjour minimum de 2 nuit(s) ✓ Réservation en ligne{% endblock %}">
+        <meta name="author" content="BAH IBRAHIMA">
+
+        {% block head %}{% include('home/head.html.twig') %}{% endblock %}
+        {% block stylesheet %}{% endblock %}
+    </head>
+    <body>
+
+        {% block header %} {% include('home/header.html.twig') %} {% endblock %}
+        {% block sidebar %}    {% endblock %}
+        {% block slider %}   {% endblock %}
+        {% block body %}{% endblock %}
+        {% block footer %} {% include('home/footer.html.twig') %} {% endblock %}
+        {% block javascripts %} {% include('home/javascript.html.twig') %}{% endblock %}
+    </body>
+</html>
